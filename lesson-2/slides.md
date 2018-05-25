@@ -169,21 +169,22 @@
 
  - Loose quality: `==`
  - Loose inequality: `!=`
- - For example:
 
-    ```js
-    > 1 == true
-    true
-    
-    > 1 === true
-    false
-    
-    > 0 == false
-    true
-    
-    > 0 == true
-    false
-    ```
+```js
+> 1 == true
+true
+
+> 1 === true
+false
+
+> 0 == false
+true
+
+> 0 == true
+false
+```
+
+- `0` is falsey, all other numbers are truthy!
 
 ---
 
@@ -273,6 +274,8 @@ false
 > '' === false
 false
 ```
+
+Strings are truthy if their length is greater than 0
 
 ---
 
