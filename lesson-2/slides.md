@@ -279,7 +279,7 @@ Strings are truthy if their length is greater than 0
 
 ---
 
-# Basic Types
+# Compound Types
 ## Arrays
 
  - List of items
@@ -293,7 +293,7 @@ Strings are truthy if their length is greater than 0
     
 ---
 
-# Basic Types
+# Compound Types
 ## Arrays
 
  - Can contain any type
@@ -311,7 +311,7 @@ Strings are truthy if their length is greater than 0
 
 ---
 
-# Basic Types
+# Compound Types
 ## Arrays
 
  - Have a length property
@@ -326,4 +326,104 @@ Strings are truthy if their length is greater than 0
     > [ 1, 4, 9, 16, 25 ][2]
     9
     ```
- - Strings are essentially arrays of characters!
+    
+ - *Strings are essentially arrays of characters!*
+
+---
+
+# Compound Types
+## Arrays / Comparison
+
+ - Cannot use equality operators on arrays in the way you'd think:
+
+    ```js
+    > [1, 2, 3] === [1, 2, 3]
+    false
+    
+    > [1, 2, 3] == [1, 2, 3]
+    false
+    ```
+    
+ - Why do you suppose this is?
+
+---
+
+# Compound Types
+## Objects
+
+ - Key/value pair
+ - Keys are strings
+ - Values can be any type
+
+---
+
+# Compound Types
+## Objects
+
+```js
+{
+  name: 'Jim',
+  age: 29,
+  friends: ['Rizwan', 'Xhoi', 'Abhi', 'Nikki']
+}
+```
+
+---
+
+# Compound Types
+## Objects
+
+ - Access values using dot notation:
+
+    ```js
+    > user.name
+    'Jim'
+    
+    > user.age
+    29
+    
+    > user.friends[1]
+    'Xhoi'
+    ```
+
+ - or using square bracket notation (just like an array):
+
+    ```js
+    > user['name']
+    'Jim'
+    ```
+    
+---
+
+# Compound Types
+## Objects
+
+ - Use `Object.keys(obj)` to get an array of all keys:
+
+    ```js
+    > Object.keys(user)
+    [ 'name', 'age', 'friends' ]
+    ```
+ 
+ - Use `Object.values(obj)` to get an array of all values:
+
+	```js
+    > Object.values(user)
+    [ 'Jim', 29, ['Rizwan', 'Xhoi', 'Abhi', 'Nikki'] ]
+    ```
+
+---
+
+# Compound Types
+## Objects
+
+ - Use `Object.entries(obj)` to get an array of all key/value pairs:
+
+    ```js
+    > Object.values(user)
+    [
+      ['name', 'Jim'],
+      ['age', 29],
+      ['friends', ['Rizwan', 'Xhoi', 'Abhi', 'Nikki']]
+    ]
+    ```
