@@ -368,12 +368,14 @@ Strings are truthy if their length is greater than 0
 }
 ```
 
+ - Remarkably similar to JSON, a.k.a. **JavaScript Object Notation**
+
 ---
 
 # Compound Types
 ## Objects
 
- - Access values using dot notation:
+ - Access values using 'dot' notation:
 
     ```js
     > user.name
