@@ -431,3 +431,37 @@ Strings are truthy if their length is greater than 0
       ['friends', ['Rizwan', 'Xhoi', 'Abhi', 'Nikki']]
     ]
     ```
+    
+---
+
+# `null` and `undefined`
+
+ - `undefined` is the **absence** of a value
+ - `null` is the **presence** of no value
+
+---
+
+# `null` and `undefined`
+
+ - WAT?
+
+---
+
+# `null` and `undefined`
+
+```js
+const someObject = {
+  a: 'foo',
+  b: 'bar',
+  c: null
+}
+
+> someObject.a
+'foo'
+    
+> someObject.c
+null
+    
+> someObject.z
+undefined
+```

@@ -19,8 +19,8 @@ Lesson 3: *"Expressions, statements and variables"*
 > 3
 3
 
-> [3, 5, 7].map(x => x * x)
-[9, 25, 49]
+> 3 * 3 + ' bottles of beer'
+'9 bottles of beer'
 
 > require('fs').readFileSync('./slides.md', 'utf8')
 '# Learn you a JS for great good! [...]'
@@ -87,7 +87,7 @@ Lesson 3: *"Expressions, statements and variables"*
 
 # Reassigning Variables
 
- - Variables declared with `var` may be reassigned or re-declared without error:
+ - Variables declared with `var` may be reassigned or re-declared *without error*:
 
     ```js
     > var x = 1
@@ -102,4 +102,3 @@ Lesson 3: *"Expressions, statements and variables"*
     ```
     
  - This is why we **don't use `var` any more**!
-
