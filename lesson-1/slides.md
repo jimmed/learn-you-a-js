@@ -10,6 +10,7 @@
 
  - Dynamic scripting language
  - Designed in 2 weeks in 1995
+ - Still in use world-wide today
 
 ---
 
@@ -27,7 +28,7 @@
  - JavaScript virtual machine
  - Heavily optimised
  - Used in node.js + Chrome
-
+ - **Runs your code**
 ---
 
 # Node.js
@@ -35,6 +36,7 @@
  - JavaScript runtime
  - Network + filesystem APIs
  - REPL
+ - **Connects V8 to the outside world**
 
 ---
 
@@ -42,14 +44,23 @@
 
  - Package manager for node.js
  - Largest online repository of FOSS libraries
+ - **Installs & manages libraries for node.js**
 
 ---
 
-# ECMAScript
+# ECMA
 
- - is JavaScript
+ - Not an acronym (!)
  - Standards body (like W3C)
  - Modernising and improving JS
+
+---
+
+# ECMAScript (ES)
+
+ - **is another name for JavaScript**
+ - defines incremental JS standards
+   - ES2015, ES2016, ES2017 etc.
 
 ---
 
