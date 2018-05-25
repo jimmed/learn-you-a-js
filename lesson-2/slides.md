@@ -1,5 +1,7 @@
+<!-- $theme: gaia -->
+
 # Learn you a JS for great good!
-### Lesson 2: *"A little knowledge is a dangerous thing"*
+Lesson 2: *"A little knowledge is a dangerous thing"*
 
 ---
 

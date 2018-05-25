@@ -1,3 +1,5 @@
+<!-- $theme: gaia -->
+
 # Learn you a JS for great good!
 
 ### Lesson 1: *"How did it come to this?"*
