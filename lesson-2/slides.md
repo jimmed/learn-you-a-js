@@ -140,6 +140,16 @@
 # Basic Types
 ## Numbers / Comparison
 
+ - Greater than: `>`
+ - Greater than or equal: `>=`
+ - Less than: `<`
+ - Less than or equal: `<=`
+
+---
+
+# Basic Types
+## Numbers / Comparison
+
  - Strict equality: `===`
  - Strict inequality: `!==`
  - For example:
