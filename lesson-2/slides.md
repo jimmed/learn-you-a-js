@@ -480,7 +480,7 @@ Strings are truthy if their length is greater than 0
 * Use `Object.entries(obj)` to get an array of all key/value pairs:
 
   ```js
-  > Object.values(user)
+  > Object.entries(user)
   [
     ['name', 'Jim'],
     ['age', 29],
