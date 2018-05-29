@@ -1,111 +1,149 @@
 <!-- $theme: gaia -->
+<!-- $size: 16:9 -->
+
 
 # Learn you a JS for great good!
-Lesson 2: *"A little knowledge is a dangerous thing"*
+
+#### Lesson 2: _"A little knowledge is a dangerous thing"_
 
 ---
 
 # Basic Types & Operators
 
- - Booleans
- - Numbers
- - Strings
- - (`null` and `undefined`)
+* Booleans
+* Numbers
+* Strings
+* (`null` and `undefined`)
 
 ---
 
 # Basic Types
+
 ## Booleans
 
- - Can be either `true` or `false`
+* Can be either `true` or `false`
 
 ---
 
 # Basic Types
+
 ## Booleans
 
- - "Not" operator: `!`
- - For example:
+* "Not" operator: `!`
+* For example:
+
+  ```js
+  > !true
+  false
+
+  > !false
+  true
+
+  > !!true
+  true
+  ```
+
+---
+
+# Basic Types
+
+## Booleans
+
+* "And" operator: `&&`
+
+  ```js
+  > true && true
+  true
+
+  > true && false
+  false
+  ```
+
+* "Or" operator: `||`
+
+  ```js
+  > true || false
+  true
+
+  > false || false
+  false
+  ```
+
+  ---
+
+  # Basic Types
+
+  ## Booleans
+
+  * "And" operator: `&&`
 
     ```js
-    > !true
-    false
-    
-    > !false
-    true
-    
-    > !!true
-    true
+    > 3 && 4
+    4
+
+    > 12 && 0 && 2
+    0
     ```
----
 
-# Basic Types
-## Booleans
-
- - "And" operator: `&&`
-
-   ```js
-   > true && true
-   true
-   
-   > true && false
-   false
-   ```
-
- - "Or" operator: `||`
- 
-   ```js
-   > true || false
-   true
-   
-   > false || false
-   false
-   ```
----
-
-# Basic Types
-## Booleans
-
- - Strict equality: `===`
- - Strict inequality: `!==`
-
- - For example:
+  * "Or" operator: `||`
 
     ```js
-    > true === true
-    true
-    
-    > true === false
-    false
-    
-    > true !== true
-    false
-    
-    > true !== false
-    true
+    > 1 || 0
+    1
+
+    > 2 || 3
+    2
     ```
 
 ---
 
 # Basic Types
+
+## Booleans
+
+* Strict equality: `===`
+* Strict inequality: `!==`
+
+* For example:
+
+  ```js
+  > true === true
+  true
+
+  > true === false
+  false
+
+  > true !== true
+  false
+
+  > true !== false
+  true
+  ```
+
+---
+
+# Basic Types
+
 ## Numbers
 
- - Single type for all numbers (integer or floating point)
- - Accurate *enough* for the web
+* Single type for all numbers (integer or floating point)
+* Accurate _enough_ for the web
 
 ---
 
 # Basic Types
+
 ## Numbers / Maths
 
- - Addition: `+`
- - Subtraction: `-`
- - Division: `/`
- - Multiplication: `*`
+* Addition: `+`
+* Subtraction: `-`
+* Division: `/`
+* Multiplication: `*`
 
 ---
 
 # Basic Types
+
 ## Numbers / Maths
 
 ```js
@@ -115,62 +153,67 @@ Lesson 2: *"A little knowledge is a dangerous thing"*
 > (5 + 2) * 3
 21
 ```
+
 ---
 
 # Basic Types
+
 ## Numbers / Maths
 
- - Modulo (a.k.a. "remainder"): `%`
- - For example:
-   
-   ```js
-   > 6 % 3
-   0
-   
-   > 7 % 3
-   1
-   
-   > 8 % 3
-   2
-   
-   > 9 % 3
-   3
-   ```
+* Modulo (a.k.a. "remainder"): `%`
+* For example:
+
+  ```js
+  > 6 % 3
+  0
+
+  > 7 % 3
+  1
+
+  > 8 % 3
+  2
+
+  > 9 % 3
+  3
+  ```
 
 ---
 
 # Basic Types
+
 ## Numbers / Comparison
 
- - Greater than: `>`
- - Greater than or equal: `>=`
- - Less than: `<`
- - Less than or equal: `<=`
+* Greater than: `>`
+* Greater than or equal: `>=`
+* Less than: `<`
+* Less than or equal: `<=`
 
 ---
 
 # Basic Types
+
 ## Numbers / Comparison
 
- - Strict equality: `===`
- - Strict inequality: `!==`
- - For example:
+* Strict equality: `===`
+* Strict inequality: `!==`
+* For example:
 
-   ```js
-   > 1 === 1
-   true
-   
-   > 1 === 2
-   false
-   ```
+  ```js
+  > 1 === 1
+  true
+
+  > 1 === 2
+  false
+  ```
 
 ---
 
 # Basic Types
+
 ## Strict vs. loose equality
 
- - Loose quality: `==`
- - Loose inequality: `!=`
+* Loose quality: `==`
+* Loose inequality: `!=`
 
 ```js
 > 1 == true
@@ -186,64 +229,70 @@ true
 false
 ```
 
-- `0` is falsey, all other numbers are truthy!
+* `0` is *falsey*, all other numbers are *truthy*!
 
 ---
 
 # Basic Types
+
 ## Strict vs. loose equality
 
- - Strict equality (`===`): both values are the **same type** and are equal
- - Loose equality (`==`): both values are equal **when coerced to the same type**
+* Strict equality (`===`): both values are the **same type** and are equal
+* Loose equality (`==`): both values are equal **when coerced to the same type**
 
 ---
 
 # Basic Types
+
 ## Strings
 
- - Essentially just text
- - For example:
+* Essentially just text
+* For example:
 
-    ```js
-    > "hello world"
-    'hello world'
-    ```
+  ```js
+  > "hello world"
+  'hello world'
+  ```
 
 ---
 
 # Basic Types
+
 ## Strings
 
- - Concatentation: `+`
- - For example:
-   
-   ```js
-   > 'hello there ' + 'my friend'
-   'hello there my friend'
-   ```
+* Concatentation: `+`
+* For example:
+
+  ```js
+  > 'hello there ' + 'my friend'
+  'hello there my friend'
+  ```
 
 ---
 
 # Basic Types
+
 ## Strings
 
- - Strings have a length property
- 
-   ```js
-   > 'Jim O\'Brien'.length
-   11
-   ```
- 
- - Can address each character numerically
- 
-    ```js
-    > 'Jim O\'Brien'[6]
-    'B'
-	```
+* Strings have a length property
+
+  ```js
+  > 'Jim O\'Brien'.length
+  11
+  ```
+
+* Can address each character numerically
+
+  ````js
+  > 'Jim O\'Brien'[6]
+  'B'
+  		```
+  ````
 
 ---
 
 # Basic Types
+
 ## Coercing Strings
 
 ```js
@@ -264,6 +313,7 @@ false
 ---
 
 # Basic Types
+
 ## Coercing Strings
 
 ```js
@@ -282,84 +332,86 @@ Strings are truthy if their length is greater than 0
 ---
 
 # Compound Types
+
 ## Arrays
 
- - List of items
+* List of items
 
-    ```js
-    [1, 2, 3, 4, 5]
-    ```
-    
-    ```js
-    ['Rizwan', 'Nikki', 'Abhi', 'Xhoi']
-    
----
+  ```js
+  [1, 2, 3, 4, 5]
+  ```
 
-# Compound Types
-## Arrays
-
- - Can contain any type
- - Can be nested
-
-    ```js
-    [
-        1,
-        'Rizwan',
-        455,
-        true,
-        [ 3, 5, 7 ]
-    ]
-    ```
+  ```js
+  ['Rizwan', 'Nikki', 'Abhi', 'Xhoi']
+  ```
 
 ---
 
 # Compound Types
+
 ## Arrays
 
- - Have a length property
+* Can contain any type
+* Can be nested
 
-    ```js
-    > [ 1, 4, 9, 16, 25 ].length
-    5
-    ```
- - Can address each item numerically
-
-    ```js
-    > [ 1, 4, 9, 16, 25 ][2]
-    9
-    ```
-    
- - *Strings are essentially arrays of characters!*
+  ```js
+  [1, 'Rizwan', 455, true, [3, 5, 7]]
+  ```
 
 ---
 
 # Compound Types
+
+## Arrays
+
+* Have a length property
+
+  ```js
+  > [ 1, 4, 9, 16, 25 ].length
+  5
+  ```
+
+* Can address each item numerically
+
+  ```js
+  > [ 1, 4, 9, 16, 25 ][2]
+  9
+  ```
+
+* _Strings are essentially arrays of characters!_
+
+---
+
+# Compound Types
+
 ## Arrays / Comparison
 
- - Cannot use equality operators on arrays in the way you'd think:
+* Cannot use equality operators on arrays in the way you'd think:
 
-    ```js
-    > [1, 2, 3] === [1, 2, 3]
-    false
-    
-    > [1, 2, 3] == [1, 2, 3]
-    false
-    ```
-    
- - Why do you suppose this is?
+  ```js
+  > [1, 2, 3] === [1, 2, 3]
+  false
+
+  > [1, 2, 3] == [1, 2, 3]
+  false
+  ```
+
+* Why do you suppose this is?
 
 ---
 
 # Compound Types
+
 ## Objects
 
- - Key/value pair
- - Keys are strings
- - Values can be any type
+* Key/value pair
+* Keys are strings
+* Values can be any type
 
 ---
 
 # Compound Types
+
 ## Objects
 
 ```js
@@ -370,98 +422,103 @@ Strings are truthy if their length is greater than 0
 }
 ```
 
- - Remarkably similar to JSON, a.k.a. **JavaScript Object Notation**
+* Remarkably similar to JSON, a.k.a. **JavaScript Object Notation**
 
 ---
 
 # Compound Types
+
 ## Objects
 
- - Access values using 'dot' notation:
+* Access values using 'dot' notation:
 
-    ```js
-    > user.name
-    'Jim'
-    
-    > user.age
-    29
-    
-    > user.friends[1]
-    'Xhoi'
-    ```
+  ```js
+  > user.name
+  'Jim'
 
- - or using square bracket notation (just like an array):
+  > user.age
+  29
 
-    ```js
-    > user['name']
-    'Jim'
-    ```
-    
+  > user.friends[1]
+  'Xhoi'
+  ```
+
+* or using square bracket notation (just like an array):
+
+  ```js
+  > user['name']
+  'Jim'
+  ```
+
 ---
 
 # Compound Types
+
 ## Objects
 
- - Use `Object.keys(obj)` to get an array of all keys:
+* Use `Object.keys(obj)` to get an array of all keys:
 
-    ```js
-    > Object.keys(user)
-    [ 'name', 'age', 'friends' ]
-    ```
- 
- - Use `Object.values(obj)` to get an array of all values:
+  ```js
+  > Object.keys(user)
+  [ 'name', 'age', 'friends' ]
+  ```
+
+* Use `Object.values(obj)` to get an array of all values:
 
 	```js
-    > Object.values(user)
-    [ 'Jim', 29, ['Rizwan', 'Xhoi', 'Abhi', 'Nikki'] ]
-    ```
+  > Object.values(user)
+  > [ 'Jim', 29, ['Rizwan', 'Xhoi', 'Abhi', 'Nikki'] ]
+
+  ```
 
 ---
 
 # Compound Types
+
 ## Objects
 
- - Use `Object.entries(obj)` to get an array of all key/value pairs:
+* Use `Object.entries(obj)` to get an array of all key/value pairs:
 
-    ```js
-    > Object.values(user)
-    [
-      ['name', 'Jim'],
-      ['age', 29],
-      ['friends', ['Rizwan', 'Xhoi', 'Abhi', 'Nikki']]
-    ]
-    ```
-    
----
-
-# `null` and `undefined`
-
- - `undefined` is the **absence** of a value
- - `null` is the **presence** of no value
+  ```js
+  > Object.values(user)
+  [
+    ['name', 'Jim'],
+    ['age', 29],
+    ['friends', ['Rizwan', 'Xhoi', 'Abhi', 'Nikki']]
+  ]
+  ```
 
 ---
 
 # `null` and `undefined`
 
- - WAT?
+* `undefined` is the **absence** of a value
+* `null` is the **presence** of no value
+
+---
+
+# `null` and `undefined`
+
+* WAT?
 
 ---
 
 # `null` and `undefined`
 
 ```js
-const someObject = {
-  a: 'foo',
-  b: 'bar',
-  c: null
-}
+> const someObject =
+  {
+    a: 'foo',
+    b: 'bar',
+    c: null
+  }
 
 > someObject.a
 'foo'
-    
+
 > someObject.c
 null
-    
+
 > someObject.z
 undefined
 ```

@@ -1,88 +1,93 @@
 <!-- $theme: gaia -->
+<!-- $size: 16:9 -->
 
 # Learn you a JS for great good!
 
-### Lesson 1: *"How did it come to this?"*
+### Lesson 1: _"How did it come to this?"_
 
 ---
 
 # What is a JS?
 
- - Dynamic scripting language
- - Designed in 2 weeks in 1995
- - Still in use world-wide today
+* Dynamic scripting language
+* Designed in 2 weeks in 1995
+* Still in use world-wide today, despite the constant negative press
 
 ---
 
 # The JS Ecosystem
 
- - V8
- - Node.js
- - npm
- - ECMAScript
+* V8
+* Node.js
+* npm
+* ECMA(Script)
 
 ---
 
 # V8
 
- - JavaScript virtual machine
- - Heavily optimised
- - Used in node.js + Chrome
- - **Runs your code**
+* JavaScript virtual machine
+* Heavily optimised
+* Used in node.js + Chrome
+* **Runs JS really fast**
+
 ---
 
 # Node.js
 
- - JavaScript runtime
- - Network + filesystem APIs
- - REPL
- - **Connects V8 to the outside world**
+* JavaScript runtime
+* Network + filesystem APIs
+* REPL
+* Basically, **V8 made useful**
 
 ---
 
 # npm
 
- - Package manager for node.js
- - Largest online repository of FOSS libraries
- - **Installs & manages libraries for node.js**
+* Package manager for node.js
+* Largest online repository of FOSS libraries
+* **Installs & manages libraries for node.js**
 
 ---
 
 # ECMA
 
- - Not an acronym (!)
- - Standards body (like W3C)
- - Modernising and improving JS
+* Not an acronym (!)
+* Standards body (like W3C)
+* Modernising and improving JS
 
 ---
 
 # ECMAScript (ES)
 
- - **is another name for JavaScript**
- - defines incremental JS standards
-   - ES2015, ES2016, ES2017 etc.
+* **is another name for JavaScript**
+* defines incremental JS standards
+  * ES2015, ES2016, ES2017 etc.
 
 ---
 
 # Demo
+
 ## Using the Node.js REPL
 
 ---
 
 # Demo
+
 ## Using the Node.js REPL
 
-1. Launch node without any arguments
+1.  Launch node without any arguments
 
     ```bash
     $ node
     ```
 
-2. Type a JS statement, get the result back
+2.  Type a JS statement, get the result back
 
 ---
 
 # Demo
+
 ## Using the Node.js REPL
 
 ```js
@@ -99,19 +104,21 @@
 ---
 
 # Demo
+
 ## Running code from files
 
-1. Launch node, passing your file path as an argument
-    
+1.  Launch node, passing your file path as an argument
+
     ```bash
     $ node demo1.js
     ```
 
-2. Code will be executed... but no output?
+2.  Code will be executed... but no output?
 
 ---
 
 # Demo
+
 ## Running code from files
 
 ```js
@@ -119,19 +126,19 @@ console.log(1 + 2)
 
 console.log('hello there ' + process.env.USER + '!')
 
-console.log(
-  require('fs').readFileSync('./slides.md', 'utf8')
-)
+console.log(require('fs').readFileSync('./slides.md', 'utf8'))
 ```
 
 ---
 
 # Demo
+
 ## Running code from files
 
-3. Use `console.log` to output something
+3.  Use `console.log` to output something
 
-	```bash
+    ```bash
     $ node demo2.js
     ```
-4. Re-run the code again, see the output!
+
+4.  Re-run the code again, see the output!

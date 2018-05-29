@@ -1,15 +1,16 @@
 <!-- $theme: gaia -->
+<!-- $size: 16:9 -->
 
 # Learn you a JS for great good!
 
-Lesson 3: *"Expressions, statements and variables"*
+#### Lesson 3: _"Expressions, statements and variables"_
 
 ---
 
 # Expressions
 
- - Anything that **evaluates to a value**
- - Can be used anywhere that expects a value
+* Anything that **evaluates to a value**
+* Can be used anywhere that expects a value
 
 ---
 
@@ -30,75 +31,75 @@ Lesson 3: *"Expressions, statements and variables"*
 
 # Variables
 
- - Re-usable references to values
- - Originally used the `var` keyword
- - Modern ECMAScript uses `const` or `let` keywords
+* Re-usable references to values
+* Originally used the `var` keyword
+* Modern ECMAScript uses `const` or `let` keywords
 
 ---
 
 # Assigning Variables
 
- - Assign the result of an expression to a variable:
+* Assign the result of an expression to a variable:
 
-    ```js
-    > const colour = 'blue'
-    
-    > const age = 29
-    
-    > const something = age + colour
-    
-    > something
-    '29blue'
-    ```
- 
----
+  ```js
+  > const colour = 'blue'
 
-# Reassigning Variables
+  > const age = 29
 
- - Variables declared with `const` may never be reassigned or re-declared
+  > const something = age + colour
 
-    ```js
-    > const x = 1
-     
-    > x = 2
-    TypeError: Assignment to constant variable.
-
-    > const x = 3
-    SyntaxError: Identifier 'x' has already been declared
-    ```
+  > something
+  '29blue'
+  ```
 
 ---
 
 # Reassigning Variables
 
- - Variables declared with `let` may be reassigned, but not re-declared:
+* Variables declared with `const` may never be reassigned or re-declared
 
-    ```js
-    > let x = 1
-    
-    > x = 2
-    2
-    
-    > let x = 3
-    SyntaxError: Identifier 'x' has already been declared
-    ```
+  ```js
+  > const x = 1
+
+  > x = 2
+  TypeError: Assignment to constant variable.
+
+  > const x = 3
+  SyntaxError: Identifier 'x' has already been declared
+  ```
 
 ---
 
 # Reassigning Variables
 
- - Variables declared with `var` may be reassigned or re-declared *without error*:
+* Variables declared with `let` may be reassigned, but not re-declared:
 
-    ```js
-    > var x = 1
-    
-    > x = 2
-    2
-    
-    > var x = 3
-    
-    > x
-    3
-    ```
-    
- - This is why we **don't use `var` any more**!
+  ```js
+  > let x = 1
+
+  > x = 2
+  2
+
+  > let x = 3
+  SyntaxError: Identifier 'x' has already been declared
+  ```
+
+---
+
+# Reassigning Variables
+
+* Variables declared with `var` may be reassigned or re-declared _without error_:
+
+  ```js
+  > var x = 1
+
+  > x = 2
+  2
+
+  > var x = 3
+
+  > x
+  3
+  ```
+
+* This is why we **don't use `var` any more**!
