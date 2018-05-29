@@ -284,11 +284,10 @@ false
 
 * Can address each character numerically
 
-  ````js
+  ```js
   > 'Jim O\'Brien'[6]
   'B'
-  		```
-  ````
+  ```
 
 ---
 
@@ -328,7 +327,8 @@ false
 false
 ```
 
-Strings are truthy if their length is greater than 0
+* Strings are truthy if their length is greater than 0
+* ...unless they're a tab (`'\t'`) or a newline (`'\n'`)
 
 ---
 
