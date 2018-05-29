@@ -229,7 +229,8 @@ true
 false
 ```
 
-* `0` is *falsey*, all other numbers are *truthy*!
+* Positive numbers are *truthy*
+* Negative numbers (and `0`) are *falsey*
 
 ---
 
