@@ -3,7 +3,7 @@
 
 # Learn you a JS for great good!
 
-#### Lesson 3: _"Expressions, statements and variables"_
+#### Lesson 3: _"Expressions and variable assignment"_
 
 ---
 
